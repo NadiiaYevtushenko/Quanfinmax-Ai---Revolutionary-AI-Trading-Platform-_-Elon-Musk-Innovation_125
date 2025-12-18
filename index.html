@@ -2345,9 +2345,11 @@
           autoPlaceholder: 'aggressive',
           separateDialCode: true,
           onlyCountries: [
-            "US"
+            "US",
+            "CA"
           ],
-          initialCountry: '',
+          preferredCountries: ['US'],
+          initialCountry: 'US',
         });
 
         tel_input.addEventListener('input', () => {
