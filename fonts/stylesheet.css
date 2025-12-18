@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('WorkSans-Bold.woff2') format('woff2'),
+        url('WorkSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

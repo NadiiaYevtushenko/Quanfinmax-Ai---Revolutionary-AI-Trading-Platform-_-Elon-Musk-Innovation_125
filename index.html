@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script src='js/jquery.min.js'></script>
+  <script src='js/intlTelInput.js'></script>
+  <link href='css/intlTelInput.css' rel='stylesheet' />
+  <script src='js/libphonenumber-mobile.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="same-origin">
+
+  <!-- Primary Meta Tags -->
+  <title>
+    Quanfinmax Ai - Revolutionary AI Trading Platform | Elon Musk Innovation
+  </title>
+  <meta name="title" content="Quanfinmax Ai - Revolutionary AI Trading Platform | Elon Musk Innovation">
+  <meta name="description"
+    content="Join Quanfinmax Ai, the innovative AI-powered trading platform backed by Elon Musk. Turn $500 into $9,500 in 3 days. Register now and get your personal manager!">
+  <meta name="keywords"
+    content="Quanfinmax Ai, Quantfinex computing, AI trading, Elon Musk, cryptocurrency, investment platform, forex trading, automated trading">
+  <meta name="author" content="Quanfinmax Ai">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#00FAAA">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/trades.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/intgrtn.css">
+  <link rel="stylesheet" href="css/form_1.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/people.css">
+  <link rel="stylesheet" href="css/problem.css">
+  <link rel="stylesheet" href="css/key.css">
+  <link rel="stylesheet" href="css/trust.css">
+  <link rel="stylesheet" href="css/collab.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
+  <style>
+    .iti__country-name {
+      color: #000 !important;
+    }
+
+    @media all and (max-width: 1000px) {
+      .video_play {
+        width: 250px;
+        height: 165px;
+      }
+    }
+
+    @media all and (min-width: 1000px) {
+      .video_play {
+        width: 480px;
+        height: 326px;
+      }
+    }
+
+    .video_play {
+      max-width: 480px;
+      max-height: 326px;
+      min-width: 250px;
+      min-height: 165px;
+    }
+
+    input[type="tel"] {
+      width: 100%;
+    }
+
+    .iti {
+      width: 100%;
+    }
+
+    /*----comeback---*/
+    .comeback_layout {
+      display: none;
+      position: fixed;
+      color: #000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 20000000;
+      background: rgba(0, 0, 0, 0.75);
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+    }
+
+    .comeback_layout::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .comeback_wrapper {
+      width: 100%;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .comeback_container {
+      background: #fff;
+      padding: 25px;
+      margin-top: 2%;
+      text-align: center;
+    }
+
+    .comeback_container h1 {
+      font-size: 23px;
+    }
+
+    .comeback_container .form-group {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .comeback_container .btn {
+      display: block;
+      width: 240px;
+      color: #fff;
+      background: #f82a5e;
+      text-transform: uppercase;
+      padding: 10px 0;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      margin: 0 auto;
+      text-decoration: none;
+    }
+
+    .comeback_img {
+      width: 80%;
+      margin: 10px auto;
+      max-width: 200px;
+    }
+
+    .form-horizontal span {
+      display: block;
+      margin: 20px 0;
+    }
+
+    .comeback_close {
+      float: right;
+      cursor: pointer;
+    }
+
+    #comeback p {
+      font-size: 16px;
+    }
+
+    @media (max-width: 700px) {
+      .comeback_container h1 {
+        line-height: 18px;
+        font-size: 16px;
+      }
+
+      .comeback_img {
+        margin: 5px auto;
+      }
+
+      .comeback_container p {
+        line-height: 14px;
+        font-size: 15px;
+      }
+
+      .comeback_container {
+        padding: 5px;
+      }
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="css/intlphone.css">
+  <style>
+    .overlay-zRZR47oGCv {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .lds-spinner-zRZR47oGCv {
+      color: official;
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 80px;
+    }
+
+    .lds-spinner-zRZR47oGCv div {
+      transform-origin: 40px 40px;
+      animation: lds-spinner-zRZR47oGCv 1.2s linear infinite;
+    }
+
+    .lds-spinner-zRZR47oGCv div:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 37px;
+      width: 6px;
+      height: 18px;
+      border-radius: 20%;
+      background: #fff;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(1) {
+      transform: rotate(0deg);
+      animation-delay: -1.1s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(2) {
+      transform: rotate(30deg);
+      animation-delay: -1s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(3) {
+      transform: rotate(60deg);
+      animation-delay: -0.9s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(4) {
+      transform: rotate(90deg);
+      animation-delay: -0.8s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(5) {
+      transform: rotate(120deg);
+      animation-delay: -0.7s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(6) {
+      transform: rotate(150deg);
+      animation-delay: -0.6s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(7) {
+      transform: rotate(180deg);
+      animation-delay: -0.5s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(8) {
+      transform: rotate(210deg);
+      animation-delay: -0.4s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(9) {
+      transform: rotate(240deg);
+      animation-delay: -0.3s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(10) {
+      transform: rotate(270deg);
+      animation-delay: -0.2s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(11) {
+      transform: rotate(300deg);
+      animation-delay: -0.1s;
+    }
+
+    .lds-spinner-zRZR47oGCv div:nth-child(12) {
+      transform: rotate(330deg);
+      animation-delay: 0s;
+    }
+
+    @keyframes lds-spinner-zRZR47oGCv {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .visible-zRZR47oGCv {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  </style>
+  <style>
+    form {
+      position: relative;
+    }
+
+    #preloader {
+      display: none;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      background: #bdbdbdb3;
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    #preloader img {
+      position: absolute;
+      z-index: 2;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      width: 50px;
+      height: 50px;
+    }
+
+    form button[type="submit"] {
+      margin-top: 15px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/form.css">
+
+
+</head>
+
+<body class="body" style="overflow: auto">
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <header class="header header--sticky">
+    <div class="header__wrapper">
+      <div class="header__logo aos-init aos-animate">
+        <img src="images/logo.png" style="width: 140px;  margin-right: 60px;">
+      </div>
+      <nav class="header__nav"></nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="particles-js"></div>
+    <section class="section promo dynamic-accent promo-main">
+      <div class="wrapper">
+        <div class="promo__wrapper">
+          <div class="promo__heading">
+            <h1 class="promo__title">
+              Turning <span class="anti-accent">$500</span> into
+              <span class="accent">$9,500</span> in 3 days is impossible? With
+              Quanfinmax Ai - you can do even more!
+            </h1>
+            <p class="promo__subtitle">
+              Best innovative investment platform from Elon Musk 2024 by the
+              Forex Awards. Hurry up and register right now and get the chance
+              to get rid of credits and financial difficulties! Your personal
+              manager is already waiting for you!
+            </p>
+          </div>
+        </div>
+        <div class="promo__middle-left aos-init form-div aos-animate">
+          <div class="form">
+            <div class="form--top">
+              <h2 class="form--title">SIGN UP</h2>
+            </div>
+            <!--id="Scroll"-->
+            <!-- Form -->
+
+            <div class="form-wrapper" id="formArea">
+              <form class="form _main-form contact-form">
+
+                <input type='hidden' name='phone' value=''>
+                <input type='hidden' name='questions' value='{}'>
+                <input type='hidden' name='funnel_vertical' value=''>
+                <input type='hidden' name='funnel_land' value=''>
+                <input type='hidden' name='funnel_name' value=''>
+                <input type='hidden' name='form_token' value=''>
+
+                <div class="form--controlWrapper form-group">
+                  <div class="input--wrapper">
+                    <input type="text" name="first_name" class="form--input" placeholder=" " required="">
+                    <label class="form--floatingLabel" for="first_name">First Name *</label>
+                  </div>
+                </div>
+
+                <div class="form--controlWrapper form-group">
+                  <div class="input--wrapper">
+                    <input type="text" name="last_name" class="form--input" placeholder=" " required="">
+                    <label class="form--floatingLabel" for="last_name">Last Name *</label>
+                  </div>
+                </div>
+
+
+                <div class="form--controlWrapper form-group">
+                  <div class="input--wrapper">
+                    <input type="email" name="email" class="form--input" placeholder=" " required="">
+                    <label class="form--floatingLabel" for="email">Email *</label>
+                  </div>
+                </div>
+
+                <div class="form--controlWrapper form-group">
+                  <div class="input--wrapper phone-wrapper">
+                    <input type="tel" name="tel_input" class="form--input" placeholder="" maxlength="20"
+                      autocomplete="tel" required="">
+                  </div>
+                </div>
+
+                <div class="form--controlWrapper form-group">
+                  <button type="submit" class="form--btn buttonSend" style="padding: 15px 20px; cursor: pointer">
+                    <span class="btnFormText">Submit</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- Form end -->
+          </div>
+        </div>
+        <div class="promo__right">
+          <div class="play-btn-wrap">
+            <div style="
+                  position: relative;
+                  filter: drop-shadow(0 0 4px var(--third-color));
+                  -webkit-filter: drop-shadow(0 0 4px var(--third-color));
+                  transition: all 0.2s ease-in;
+                ">
+              <div class="round-logo">
+                <span class="letter0 letter" style="transform: rotate(0deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(5.4deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(10.8deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(16.2deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(21.6deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(27deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(32.4deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(37.8deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(43.2deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(48.6deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(54deg)">
+                </span>
+                <span class="letter0 letter" style="transform: rotate(59.4deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(64.8deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(70.2deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(75.6deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(81deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(86.4deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(91.8deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(97.2deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(102.6deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(108deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(113.4deg)">
+                </span>
+                <span class="letter0 letter" style="transform: rotate(118.8deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(124.2deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(129.6deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(135deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(140.4deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(145.8deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(151.2deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(156.6deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(162deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(167.4deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(172.8deg)">
+                </span>
+                <span class="letter0 letter" style="transform: rotate(178.2deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(183.6deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(189deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(194.4deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(199.8deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(205.2deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(210.6deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(216deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(221.4deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(226.8deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(232.2deg)">
+                </span>
+                <span class="letter0 letter" style="transform: rotate(237.6deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(243deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(248.4deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(253.8deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(259.2deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(264.6deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(270deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(275.4deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(280.8deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(286.2deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(291.6deg)">
+                </span>
+                <span class="letter0 letter" style="transform: rotate(297deg)">P</span>
+                <span class="letter1 letter" style="transform: rotate(302.4deg)">l</span>
+                <span class="letter2 letter" style="transform: rotate(307.8deg)">a</span>
+                <span class="letter3 letter" style="transform: rotate(313.2deg)">y</span>
+                <span class="letter8 letter" style="transform: rotate(318.6deg)">
+                </span>
+                <span class="letter4 letter" style="transform: rotate(324deg)">v</span>
+                <span class="letter5 letter" style="transform: rotate(329.4deg)">i</span>
+                <span class="letter6 letter" style="transform: rotate(334.8deg)">d</span>
+                <span class="letter7 letter" style="transform: rotate(340.2deg)">e</span>
+                <span class="letter8 letter" style="transform: rotate(345.6deg)">o</span>
+                <span class="letter8 letter" style="transform: rotate(351deg)">
+                </span>
+              </div>
+              <!-- round-logo -->
+              <script>
+                let letter = document.querySelectorAll(".letter");
+                for (let i = 0; i < letter.length; i++) {
+                  letter[i].style.transform = "rotate(" + i * 5.4 + "deg)";
+                }
+              </script>
+              <div class="video_play">
+                <video src="media/video.mp4" style="width: 100%; height: 100%" controls="" autoplay="" muted=""></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="users-row">
+        <div class="users-row__wrapper" aria-hidden="true">
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/1.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Roberto</span>
+              <span class="users-row__won">Profit: <span>$697</span></span>
+              <span class="users-row__">Current Balance: $5.022</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/2.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Ian</span>
+              <span class="users-row__won">Profit: <span>$893</span></span>
+              <span class="users-row__">Current Balance: $8.792</span>
+            </div>
+          </div>
+
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/3.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Fred</span>
+              <span class="users-row__won">Profit: <span>$788</span></span>
+              <span class="users-row__">Current Balance: $4.239</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/4.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Kristin</span>
+              <span class="users-row__won">Profit: <span>$575</span></span>
+              <span class="users-row__">Current Balance: $9.236</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/5.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Ray</span>
+              <span class="users-row__won">Profit: <span>$785</span></span>
+              <span class="users-row__">Current Balance: $6.493</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/6.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Brent</span>
+              <span class="users-row__won">Profit: <span>$620</span></span>
+              <span class="users-row__">Current Balance: $7.502</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/7.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Felicia</span>
+              <span class="users-row__won">Profit: <span>$821</span></span>
+              <span class="users-row__">Current Balance: $9.892</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/8.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Cody</span>
+              <span class="users-row__won">Profit: <span>$397</span></span>
+              <span class="users-row__">Current Balance: $4.424</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/9.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Brian</span>
+              <span class="users-row__won">Profit: <span>$770</span></span>
+              <span class="users-row__">Current Balance: $8.102</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/10.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Murray</span>
+              <span class="users-row__won">Profit: <span>$500</span></span>
+              <span class="users-row__">Current Balance: $9.120</span>
+            </div>
+          </div>
+        </div>
+        <div class="users-row__wrapper" aria-hidden="true">
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/11.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Tamara</span>
+              <span class="users-row__won">Profit: <span>$327</span></span>
+              <span class="users-row__">Current Balance: $5.554</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/12.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Ana</span>
+              <span class="users-row__won">Profit: <span>$725</span></span>
+              <span class="users-row__">Current Balance: $9.483</span>
+            </div>
+          </div>
+
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/13.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Brayden</span>
+              <span class="users-row__won">Profit: <span>$605</span></span>
+              <span class="users-row__">Current Balance: $5.813</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/14.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Roberto</span>
+              <span class="users-row__won">Profit: <span>$480</span></span>
+              <span class="users-row__">Current Balance: $8.792</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/15.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Aiden</span>
+              <span class="users-row__won">Profit: <span>$815</span></span>
+              <span class="users-row__">Current Balance: $4.270</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/16.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Hector</span>
+              <span class="users-row__won">Profit: <span>$912</span></span>
+              <span class="users-row__">Current Balance: $4.915</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/17.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Jimmy</span>
+              <span class="users-row__won">Profit: <span>$779</span></span>
+              <span class="users-row__">Current Balance: $1.620</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/18.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Vincent</span>
+              <span class="users-row__won">Profit: <span>$585</span></span>
+              <span class="users-row__">Current Balance: $3.820</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/19.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Jeffrey</span>
+              <span class="users-row__won">Profit: <span>$609</span></span>
+              <span class="users-row__">Current Balance: $5.813</span>
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="users-row__img">
+              <img src="images/20.jpg" alt="">
+            </div>
+            <div class="users-row__text">
+              <span class="users-row__name">Cindy</span>
+              <span class="users-row__won">Profit: <span>$919</span></span>
+              <span class="users-row__">Current Balance: $6.552</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section technology" id="technology">
+      <div class="technology__bg"></div>
+      <div class="wrapper technology__header">
+        <h2>What Makes Quantfinex Computing So Good For Investing</h2>
+        <div class="technology__text-wrapper">
+          <p>
+            This is the world’s first Quantfinex computing machine; unlike
+            your home PC, this computer is smart – it makes thousands of
+            simultaneous ‘decisions’ at once. Your brain thinks one thought at
+            a time, in a sequence. Imagine if you could have thousands of
+            thoughts at once, each as clear as the other. That’s Quantfinex
+            computing.
+          </p>
+          <p>
+            Using that power, our Quantfinex computing machine will help you
+            make smarter trades and make more money than you thought possible.
+            Even better, it’s designed so that you can make money and help
+            others while you profit!
+          </p>
+          <p>
+            It finds trades by analysing differentials between stock prices
+            every nano-second that stock markets are live (and makes
+            predictions even when the markets are closed, so you’ll know
+            what’s likely to happen when they re-open). Your current computer
+            (and everyone else’s) can’t match the decision speeds of this new
+            system.
+          </p>
+        </div>
+        <p class="technology__conclusion">
+          The probability of a Quanfinmax Ai error is practically zero! This
+          shows that your investments will never go into deficit, it has
+          become a breakthrough in the fight against people's financial
+          problems.
+        </p>
+      </div>
+    </section>
+
+    <section class="problem dynamic-accent">
+      <div class="problem__title-wrapper">
+        <span class="problem__title-left"></span>
+        <h2 class="problem__title">Problems</h2>
+        <span class="problem__title-right"></span>
+      </div>
+      <div class="problem__item problem__first dynamic-accent">
+        <div class="problem__item-wrapper">
+          <div class="problem__text-wrapper">
+            <p class="problem__text">
+              <span>Poverty</span> is a global problem that we strive to solve
+              forever. The global extreme poverty rate has reached 9.3%, up
+              from 8.4% in 2022. The recent crises have further distanced the
+              world from the Global goal of eradicating extreme poverty by
+              2030.
+            </p>
+            <p class="problem__text problem__accent">
+              In Singapore, more than one in eight people (13.4%) and one in
+              six children (16.6%) live below the poverty line after
+              accounting for housing costs.
+            </p>
+          </div>
+          <div class="problem__img-wrapper">
+            <img src="images/poverty.jpg" alt="" class="problem__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="problem__item problem__second dynamic-accent">
+        <div class="problem__item-wrapper">
+          <div class="problem__img-wrapper">
+            <img src="images/suicide.jpg" alt="" class="problem__img">
+          </div>
+          <div class="problem__text-wrapper">
+            <p class="problem__text">
+              <span>Global suicide</span> due to financial problems has
+              increased by an average of 5% and continues to rise.
+            </p>
+            <p class="problem__text problem__accent">
+              The annual Suicide Prevention Singapore report shows 70% of
+              Singaporeans are experiencing higher than normal stress levels
+              compared to 2022 due to the cost of living, debts, and credits.
+              Suicide rates in Singapore are on the rise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem__item problem__third dynamic-accent">
+        <div class="problem__item-wrapper">
+          <div class="problem__text-wrapper">
+            <p class="problem__text">
+              <span>Global inequality</span> is in bad shape and is basically
+              not improving. Today, the richest 10 percent receive 52 percent
+              of all income. The poorest half - receive only 8.5 percent.
+            </p>
+            <p class="problem__text problem__accent">
+              Around 5% of Singaporeans experience deep social isolation every
+              year.
+            </p>
+          </div>
+          <div class="problem__img-wrapper">
+            <img src="images/inequality.jpg" alt="" class="problem__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="key">
+      <div class="key__wrapper dynamic-accent">
+        <h2 class="key__title">
+          <span>s</span>
+          <span>o</span>
+          <span>l</span>
+          <span>u</span>
+          <span>t</span>
+          <span>i</span>
+          <span>o</span>
+          <span>n</span>
+        </h2>
+        <div class="key__arrow">
+          <div class="arrow"></div>
+        </div>
+        <p class="key__main-text">
+          Quanfinmax Ai is the future of the money world, helping people and
+          the World Bank in the fight against global poverty! The goals of the
+          World Bank Group are to end extreme poverty and promote shared
+          prosperity. Using the capabilities of Quantfinex computing, a team
+          with renowned partners and banks led by Elon Musk has succeeded.
+          Every person on the platform can now forget about their fears,
+          credits, low income, depression, and hunger. In Singapore, with the
+          help of Quanfinmax Ai, UN experts promise a 30% boost to the economy
+          by 2027. Your second opportunity to become financially free in 2024
+          - if you didn't manage to do so on Bitcoin in 2018!
+        </p>
+      </div>
+      <div class="key__wrapper key__wrapper--start dynamic-accent key__start">
+        <p class="key__start-phrase">So what do you need to start?</p>
+        <ul class="key__start-list">
+          <li class="key__start-item">
+            <span class="key__start-number">1</span>
+            <span class="key__start-word">Sign up</span>
+            <span class="key__start-desc">Register an account</span>
+          </li>
+          <li class="key__start-item">
+            <span class="key__start-number">2</span>
+            <span class="key__start-word">Deposit</span>
+            <span class="key__start-desc">Minimum deposit is $500</span>
+          </li>
+          <li class="key__start-item">
+            <span class="key__start-number">3</span>
+            <span class="key__start-word">Pick</span>
+            <span class="key__start-desc">Pick the trades Quanfinmax Ai recommends</span>
+          </li>
+          <li class="key__start-item">
+            <span class="key__start-number">4</span>
+            <span class="key__start-word">Withdraw</span>
+            <span class="key__start-desc">Withdraw any funds in matter of hours!</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="trust__wrapper">
+        <h2 class="trust__title">Why shouldn't you be afraid?</h2>
+        <div class="trust__content dynamic-accent">
+          <div class="trust__content-item sert-wrapper">
+            <img src="images/sert.png" alt="" class="sert">
+          </div>
+          <div class="trust__content-item">
+            <ul class="trust__list">
+              <li class="trust__list-item">
+                You can withdraw profits from your first deposit to any
+                payment system or bank at any time. All Quanfinmax Ai
+                transactions are only supported and processed through World
+                Bank.
+              </li>
+              <li class="trust__list-item">
+                You are not alone. The best manager will help you multiply
+                your first deposit and solve any difficulties that may arise.
+              </li>
+              <li class="trust__list-item">
+                Quanfinmax Ai users' data remains confidential. After 30 days
+                of not using the platform, all data is automatically erased
+                from our servers.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="people">
+      <div class="arrows">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="description">
+        <d class="descriptiom__logo">Advisors</d>
+        <p>
+          Quanfinmax Ai has wide support among investors. Among them are the
+          brightest scientists, businessmen and engineers
+        </p>
+      </div>
+
+      <div class="swiper slider slider__main">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide slider__item">
+            <div class="slider__item-wrapper">
+              <div class="slider__item-top">
+                <div class="slider__item-img-wrapper">
+                  <img src="images/c2.jpg" class="slider__item-img">
+                </div>
+                <div class="slider__item-text-wrapper">
+                  <p class="slider__item-name">Jeff Bezos:</p>
+                  <p class="slider__item-desc">
+                    Technology entrepreneur, investor, and philanthropist
+                  </p>
+                </div>
+              </div>
+              <p class="slider__item-text">
+                Quantfinex computing is the future. I’m not exaggerating when
+                I say it will change everything. This is the early days of
+                Quantfinex computing; not many people know about it, which
+                means very few are using it. The few that are, are making
+                incredibly wise (and profitable) decisions.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__item-wrapper">
+              <div class="slider__item-top">
+                <div class="slider__item-img-wrapper">
+                  <img src="images/c3.jpg" class="slider__item-img">
+                </div>
+                <div class="slider__item-text-wrapper">
+                  <p class="slider__item-name">Keith Rupert Murdoch:</p>
+                  <p class="slider__item-desc">
+                    Singaporeans and American entrepreneur, media tycoon, and
+                    owner of media
+                  </p>
+                </div>
+              </div>
+              <p class="slider__item-text">
+                Today, people with access to the Quanfinmax Ai platform can
+                safely and legally raise their income - beyond belief! If I
+                had had the opportunity to do so in my years, I would not have
+                even considered collaborating with the Quantfinex Machine!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__item-wrapper">
+              <div class="slider__item-top">
+                <div class="slider__item-img-wrapper">
+                  <img src="images/c1.jpg" class="slider__item-img">
+                </div>
+                <div class="slider__item-text-wrapper">
+                  <p class="slider__item-name">Bill Gates:</p>
+                  <p class="slider__item-desc">
+                    Business magnate, investor, author, philanthropist, and
+                    humanitarian
+                  </p>
+                </div>
+              </div>
+              <p class="slider__item-text">
+                I know for a fact Elon has spent $3 billion of his own money
+                to fund this program. Hats off to him for that – that’s $3
+                billion of his own money to fund a better future for everyone,
+                and to help others make profits that’ll help him do so! It’s a
+                win-win, and I’m very excited to see where it goes.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__item-wrapper">
+              <div class="slider__item-top">
+                <div class="slider__item-img-wrapper">
+                  <img src="images/cr4.jpg" class="slider__item-img">
+                </div>
+                <div class="slider__item-text-wrapper">
+                  <p class="slider__item-name">Changpeng Zhao:</p>
+                  <p class="slider__item-desc">
+                    Co-founder and CEO of Binance, the world's largest
+                    cryptocurrency exchange
+                  </p>
+                </div>
+              </div>
+              <p class="slider__item-text">
+                Quanfinmax Ai is not our competitor! We want to achieve the
+                common goal - the elimination of poverty in every country. On
+                behalf of myself and the Binance team, I would like to thank
+                Elon Musk and Quanfinmax Ai. Finally, there is a platform that
+                is changing people's lives, not just in words - but in deeds!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-form">
+      <div class="statistics">
+        <h2 class="statistics__title">Statistics for today:</h2>
+
+        <div class="statistics__wrapper dynamic-accent">
+          <div>
+            <p class="statistics__item">
+              Average earnings of a registered user from a deposit of $500:
+              <span data-target="792" id="number1" class="counter dynamic-accent">0</span><span class="ix">$</span>
+            </p>
+            <p class="statistics__item">
+              Registrations on Quanfinmax Ai:
+              <span data-target="112" id="number2" class="counter dynamic-accent">0</span>
+            </p>
+            <p class="statistics__item">
+              The Average Earnings Increase:
+              <span data-target="4" id="number3" class="counter dynamic-accent">0</span><span class="ix">x</span>
+            </p>
+
+            <p class="statistics__item">
+              Places left to register:
+              <span class="pack_count last-counter dynamic-accent">17</span>
+            </p>
+            <script>
+              // Counter without jQuery
+              document.addEventListener("DOMContentLoaded", function () {
+                var timerIdPackCountNumber = 17;
+                var packCountEl = document.querySelector(".pack_count");
+                if (packCountEl) {
+                  packCountEl.innerHTML = timerIdPackCountNumber;
+                  var timerIdPackCount = setInterval(function () {
+                    timerIdPackCountNumber--;
+                    packCountEl.innerHTML = timerIdPackCountNumber;
+                    if (timerIdPackCountNumber <= 5) {
+                      clearInterval(timerIdPackCount);
+                    }
+                  }, 60000); // Every minute
+                }
+              });
+            </script>
+          </div>
+          <div>
+            <svg class="statistics__svg" width="269" height="362" viewBox="0 0 269 362" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="190" width="79" height="362" rx="11" fill="white"></rect>
+              <rect x="95" y="149" width="79" height="213" rx="11" fill="white"></rect>
+              <rect y="219" width="79" height="143" rx="11" fill="white"></rect>
+            </svg>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <div class="stack" style="--stacks: 3">
+            <span style="--index: 0">Register today and grab your first profit!</span>
+            <span style="--index: 1">Register today and grab your first profit!</span>
+            <span style="--index: 2">Register today and grab your first profit!</span>
+          </div>
+        </div>
+      </div>
+      <div class="form" style="border: none; box-shadow: none; background: transparent">
+        <div class="form--controlWrapper">
+          <button type="button" id="botbnt" class="btn form--btn">
+            Register
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.querySelector("#botbnt").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <section class="collab">
+      <div class="users-row">
+        <div class="users-row__wrapper" aria-hidden="true">
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa1.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa2.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa3.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa4.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa5.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa6.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa7.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa8.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="users-row__wrapper" aria-hidden="true">
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa1.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa2.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa3.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa4.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa5.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa6.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa7.png" alt="">
+            </div>
+          </div>
+          <div class="users-row__item">
+            <div class="collab__item">
+              <img src="images/pa8.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="wrapper">
+      <div class="container">
+        <div class="formhere"></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="bottom__col">© Quanfinmax Ai 2025</div>
+    </div>
+  </footer>
+  <div class="hover-modal"></div>
+
+  <link rel="stylesheet" href="css/checkbox-svg.css">
+
+  <!-- Statistics -->
+
+  <canvas class="background"></canvas>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/people.js"></script>
+  <script src="js/parallax.js"></script>
+
+  <script src="js/particles.js"></script>
+  <script>
+    window.onload = function () {
+      Particles.init({
+        selector: ".background",
+      });
+    };
+
+    var particles = Particles.init({
+      selector: ".background",
+      color: ["#00FAAA", "#f70044"],
+      connectParticles: true,
+      maxParticles: 90,
+      speed: 0.7,
+      responsive: [
+        {
+          breakpoint: 600,
+          options: {
+            maxParticles: 15,
+            connectParticles: true,
+            speed: 0.2,
+          },
+        },
+      ],
+    });
+  </script>
+  <!--SCRIPTS IN FOOTER -->
+  <link rel="stylesheet" href="css/styleform.css" type="text/css" media="all">
+  <!--END IN FOOTER -->
+
+  <script>
+    const videoTrigger = document.querySelector(".promo__right");
+    const video = document.querySelector(".video-popup");
+    const closeButton = document.querySelector(".close-button");
+
+    if (videoTrigger && video) {
+      videoTrigger.addEventListener("click", function () {
+        video.classList.add("video-popup-show");
+      });
+    }
+
+    if (closeButton && video) {
+      closeButton.addEventListener("click", function () {
+        video.classList.remove("video-popup-show");
+      });
+    }
+  </script>
+
+  <!-- Preloader -->
+
+  <script>
+    setTimeout(function () {
+      let preloader = document.getElementById("preloader");
+      preloader.style.display = "none";
+    }, 3000);
+  </script>
+
+  <div class="overlay-zRZR47oGCv">
+    <div class="lds-spinner-zRZR47oGCv">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- form -->
+  <link rel="stylesheet" href="css/form_1.css">
+
+  <!-- Custom Form Styles -->
+  <link rel="stylesheet" href="css/custom-form-styles.css">
+  <link rel="stylesheet" href="css/phone-input-styles.css">
+
+
+  <script>
+    const email_pattern = /^([\p{L}\p{N}!#$%&'*+\/=?^`{|}~.-]+)(\.[\p{L}\p{N}!#$%&'*+\/=?^`{|}~.-]+)*@([\p{L}\p{N}][\p{L}\p{N}-]*)(\.[\p{L}\p{N}][\p{L}\p{N}-]*)*\.[\p{L}]{2,}$/u;
+    const name_pattern = /^[\p{L}’'`-]+(?: [\p{L}’'`-]+)*$/u;
+    const error_msg = {
+      'AU': { // English (Australia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'AT': { // German (Austria)
+        name_errors: 'Vorname und Nachname dürfen nur Buchstaben enthalten!',
+        email_errors: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
+        phone_errors: ['Diese Nummer existiert nicht', 'Ungültiger Ländercode', 'Nummer zu kurz', 'Nummer zu lang', 'Diese Nummer existiert nicht', 'Ungültige Nummernlänge'],
+      },
+      'AZ': { // Azerbaijani (Azerbaijan)
+        name_errors: 'Ad və soyad sahələri yalnız hərflərdən ibarət ola bilər!',
+        email_errors: 'Zəhmət olmasa, düzgün e-poçt ünvanını daxil edin!',
+        phone_errors: ['Bu nömrə mövcud deyil', 'Yanlış ölkə kodu', 'Nömrə çox qısadır', 'Nömrə çox uzundur', 'Bu nömrə mövcud deyil', 'Yanlış nömrə uzunluğu'],
+      },
+      'AL': { // Albanian (Albania)
+        name_errors: 'Fushat e emrit dhe mbiemrit mund të përmbajnë vetëm shkronja!',
+        email_errors: 'Ju lutemi, vendosni një adresë e-maili të vlefshme!',
+        phone_errors: ['Ky numër nuk ekziston', 'Kodi i shtetit është i pavlefshëm', 'Numri është shumë i shkurtër', 'Numri është shumë i gjatë', 'Ky numër nuk ekziston', 'Gjatësia e numrit është e pavlefshme'],
+      },
+      'DZ': { // Arabic (Algeria)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'AI': { // English (Anguilla)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'AO': { // Portuguese (Angola)
+        name_errors: 'Os campos de nome e sobrenome só podem conter letras!',
+        email_errors: 'Por favor, insira um endereço de e-mail válido!',
+        phone_errors: ['Este número não existe', 'Código de país inválido', 'Número muito curto', 'Número muito longo', 'Este número não existe', 'Comprimento do número inválido'],
+      },
+      'AD': { // Catalan (Andorra)
+        name_errors: 'Els camps de nom i cognoms només poden contenir lletres!',
+        email_errors: 'Si us plau, introduïu una adreça de correu electrònic vàlida!',
+        phone_errors: ['Aquest número no existeix', 'Codi de país no vàlid', 'Número massa curt', 'Número massa llarg', 'Aquest número no existeix', 'Longitud de número no vàlida'],
+      },
+      'AQ': { // English (Antarctica)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'AG': { // English (Antigua and Barbuda)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'AN': { // Dutch (Netherlands Antilles)
+        name_errors: 'De velden voornaam en achternaam mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Ongeldige landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige nummerlengte'],
+      },
+      'AR': { // Spanish (Argentina)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'AM': { // Armenian (Armenia)
+        name_errors: 'Անունն ու ազգանունը կարող են պարունակել միայն տառեր:',
+        email_errors: 'Խնդրում ենք մուտքագրել վավեր էլ.փոստի հասցե:',
+        phone_errors: ['Այս համարը գոյություն չունի', 'Անվավեր երկրի կոդ', 'Համարը չափազանց կարճ է', 'Համարը չափազանց երկար է', 'Այս համարը գոյություն չունի', 'Անվավեր համարի երկարություն'],
+      },
+      'AW': { // Dutch (Aruba)
+        name_errors: 'De velden voornaam en achternaam mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Ongeldige landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige nummerlengte'],
+      },
+      'AF': { // Pashto (Afghanistan)
+        name_errors: 'د نوم او تخلص ساحې یوازې حروف لرلی شي!',
+        email_errors: 'مهرباني وکړئ یو معتبر بریښنالیک پته دننه کړئ!',
+        phone_errors: ['دا شمېره شتون نلري', 'د هیواد ناسم کوډ', 'شمېره خورا لنډه ده', 'شمېره خورا اوږده ده', 'دا شمېره شتون نلري', 'د شمېرو ناسم اوږدوالی'],
+      },
+      'BS': { // English (Bahamas)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'BD': { // Bengali (Bangladesh)
+        name_errors: 'নাম এবং পদবি ক্ষেত্রগুলি কেবল অক্ষর ধারণ করতে পারে!',
+        email_errors: 'অনুগ্রহ করে একটি বৈধ ইমেল ঠিকানা লিখুন!',
+        phone_errors: ['এই নম্বরটি বিদ্যমান নেই', 'অবৈধ দেশ কোড', 'নম্বরটি খুব ছোট', 'নম্বরটি খুব দীর্ঘ', 'এই নম্বরটি বিদ্যমান নেই', 'অবৈধ নম্বরের দৈর্ঘ্য'],
+      },
+      'BB': { // English (Barbados)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'BH': { // Arabic (Bahrain)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'BY': { // Belarusian (Belarus)
+        name_errors: 'Палі імя і прозвішча могуць змяшчаць толькі літары!',
+        email_errors: 'Калі ласка, увядзіце сапраўдны адрас электроннай пошты!',
+        phone_errors: ['Гэты нумар не існуе', 'Несапраўдны код краіны', 'Нумар занадта кароткі', 'Нумар занадта доўгі', 'Гэты нумар не існуе', 'Несапраўдная даўжыня нумара'],
+      },
+      'BZ': { // English (Belize)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'BE': { // Dutch, French, German (Belgium)
+        name_errors: 'De velden voornaam en achternaam mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Ongeldige landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige nummerlengte'],
+      },
+      'BJ': { // French (Benin)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'BM': { // English (Bermuda)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'BV': { // Norwegian (Bouvet Island)
+        name_errors: 'Feltet navn og etternavn kan bare inneholde bokstaver!',
+        email_errors: 'Vennligst skriv inn en gyldig e-postadresse!',
+        phone_errors: ['Dette nummeret finnes ikke', 'Ugyldig landskode', 'Nummeret er for kort', 'Nummeret er for langt', 'Dette nummeret finnes ikke', 'Ugyldig nummerlengde'],
+      },
+      'BG': { // Bulgarian (Bulgaria)
+        name_errors: 'Полето за име и фамилия може да съдържа само букви!',
+        email_errors: 'Моля, въведете валиден имейл адрес!',
+        phone_errors: ['Този номер не съществува', 'Невалиден код на държавата', 'Номерът е твърде къс', 'Номерът е твърде дълъг', 'Този номер не съществува', 'Невалидна дължина на номера'],
+      },
+      'BO': { // Spanish (Bolivia)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'BA': { // Bosnian (Bosnia and Herzegovina)
+        name_errors: 'Polja za ime i prezime mogu sadržavati samo slova!',
+        email_errors: 'Molimo unesite važeću adresu e-pošte!',
+        phone_errors: ['Ovaj broj ne postoji', 'Nevažeći pozivni broj države', 'Broj je prekratak', 'Broj je predug', 'Ovaj broj ne postoji', 'Nevažeća dužina broja'],
+      },
+      'BW': { // English (Botswana)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'BR': { // Portuguese (Brazil)
+        name_errors: 'Os campos de nome e sobrenome só podem conter letras!',
+        email_errors: 'Por favor, insira um endereço de e-mail válido!',
+        phone_errors: ['Este número não existe', 'Código de país inválido', 'Número muito curto', 'Número muito longo', 'Este número não existe', 'Comprimento do número inválido'],
+      },
+      'BN': { // Malay (Brunei)
+        name_errors: 'Medan nama dan nama keluarga hanya boleh mengandungi huruf!',
+        email_errors: 'Sila masukkan alamat e-mel yang sah!',
+        phone_errors: ['Nombor ini tidak wujud', 'Kod negara tidak sah', 'Nombor terlalu pendek', 'Nombor terlalu panjang', 'Nombor ini tidak wujud', 'Panjang nombor tidak sah'],
+      },
+      'BF': { // French (Burkina Faso)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'BI': { // Kirundi (Burundi)
+        name_errors: 'Amasaha y\'izina n\'irindi zina ashobora kuba arimwo inyuguti gusa!',
+        email_errors: 'Nyabuna andika aderesi y\'ubutumwa ikora!',
+        phone_errors: ['Iyi nimero ntiyabaho', 'Ikirangaminsi k’igihugu ni kibi', 'Inomero ni ngufi cane', 'Inomero ni ndende cane', 'Iyi nimero ntiyabaho', 'Uburebure bw’inomero ntabwo bukwiriye'],
+      },
+      'BT': { // Dzongkha (Bhutan)
+        name_errors: 'མིང་། དང་། རང་འཛིན་ས་སྒོ་ནང་གྲངས་ཀོར་ཡོདཔ་ཅིག་ཡོད་།',
+        email_errors: 'དབང་གི་ཨང་དག་མིང་། དབང་གི་མིང་རིགས་ལག་ལེན་འཐབ་།',
+        phone_errors: ['འགྲེལ་ཡོདཔ་ཅིག་ཡོད་', 'ལུ་ཨང་། དབང་གི་རྒྱལ་ཁབ་ཨང་།', 'ཨང་འགྲེལ་ཡོདཔ་ཅིག་ཡོད་།', 'འགྲེལ་ཡོདཔ་ཅིག་ཡོད་', 'འགྲེལ་ཡོདཔ་ཅིག་ཡོད་', 'ལུ་ཨང་། དབང་གི་རྒྱལ་ཁབ་ཨང་།'],
+      },
+      'VU': { // Bislama (Vanuatu)
+        name_errors: 'Ol neim mo las neim oli save gat leta nomo!',
+        email_errors: 'Plis yusum wan imel adrres we i oraet!',
+        phone_errors: ['Namban ia i no stap', 'Kod blong kantri i no oraet', 'Namba ia i sot tumas', 'Namba ia i long tumas', 'Namban ia i no stap', 'Longfala namba i no oraet'],
+      },
+      'VA': { // Italian (Vatican City)
+        name_errors: 'I campi del nome e del cognome possono contenere solo lettere!',
+        email_errors: 'Si prega di inserire un indirizzo email valido!',
+        phone_errors: ['Questo numero non esiste', 'Codice paese non valido', 'Numero troppo corto', 'Numero troppo lungo', 'Questo numero non esiste', 'Lunghezza del numero non valida'],
+      },
+      'GB': { // English (United Kingdom)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'HU': { // Hungarian (Hungary)
+        name_errors: 'A név és vezetéknév mezők csak betűket tartalmazhatnak!',
+        email_errors: 'Kérjük, adjon meg egy érvényes e-mail címet!',
+        phone_errors: ['Ez a szám nem létezik', 'Érvénytelen országkód', 'A szám túl rövid', 'A szám túl hosszú', 'Ez a szám nem létezik', 'Érvénytelen számlength'],
+      },
+      'VE': { // Spanish (Venezuela)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'VN': { // Vietnamese (Vietnam)
+        name_errors: 'Các trường tên và họ chỉ có thể chứa chữ cái!',
+        email_errors: 'Vui lòng nhập địa chỉ email hợp lệ!',
+        phone_errors: ['Số này không tồn tại', 'Mã quốc gia không hợp lệ', 'Số quá ngắn', 'Số quá dài', 'Số này không tồn tại', 'Chiều dài số không hợp lệ'],
+      },
+      'HT': { // French, Haitian Creole (Haiti)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'GY': { // English (Guyana)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'GM': { // English (Gambia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'GH': { // English (Ghana)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'GP': { // French (Guadeloupe)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'GT': { // Spanish (Guatemala)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'GN': { // French (Guinea)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'GW': { // Portuguese (Guinea-Bissau)
+        name_errors: 'Os campos de nome e sobrenome só podem conter letras!',
+        email_errors: 'Por favor, insira um endereço de e-mail válido!',
+        phone_errors: ['Este número não existe', 'Código de país inválido', 'Número muito curto', 'Número muito longo', 'Este número não existe', 'Comprimento do número inválido'],
+      },
+      'DE': { // German (Germany)
+        name_errors: 'Vorname und Nachname dürfen nur Buchstaben enthalten!',
+        email_errors: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
+        phone_errors: ['Diese Nummer existiert nicht', 'Ungültiger Ländercode', 'Nummer zu kurz', 'Nummer zu lang', 'Diese Nummer existiert nicht', 'Ungültige Nummernlänge'],
+      },
+      'DJ': { // French (Djibouti)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'DM': { // English (Dominica)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'DO': { // Spanish (Dominican Republic)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'EG': { // Arabic (Egypt)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'ZM': { // English (Zambia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'ZW': { // English (Zimbabwe)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'IL': { // Hebrew (Israel)
+        name_errors: 'שדות השם ושם המשפחה יכולים להכיל רק אותיות!',
+        email_errors: 'אנא הכנס כתובת אימייל תקינה!',
+        phone_errors: ['מספר זה אינו קיים', 'קוד מדינה לא חוקי', 'המספר קצר מדי', 'המספר ארוך מדי', 'מספר זה אינו קיים', 'אורך המספר אינו חוקי'],
+      },
+      'IN': { // Hindi (India)
+        name_errors: 'नाम और उपनाम क्षेत्र केवल अक्षरों को ही समाहित कर सकते हैं!',
+        email_errors: 'कृपया एक मान्य ईमेल पता दर्ज करें!',
+        phone_errors: ['यह नंबर मौजूद नहीं है', 'अवैध देश कोड', 'नंबर बहुत छोटा है', 'नंबर बहुत लंबा है', 'यह नंबर मौजूद नहीं है', 'अवैध संख्या लंबाई'],
+      },
+      'ID': { // Indonesian (Indonesia)
+        name_errors: 'Kolom nama dan nama belakang hanya dapat berisi huruf!',
+        email_errors: 'Harap masukkan alamat email yang valid!',
+        phone_errors: ['Nomor ini tidak ada', 'Kode negara tidak valid', 'Nomor terlalu pendek', 'Nomor terlalu panjang', 'Nomor ini tidak ada', 'Panjang nomor tidak valid'],
+      },
+      'JO': { // Arabic (Jordan)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'IQ': { // Arabic (Iraq)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'IE': { // English (Ireland)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'IS': { // Icelandic (Iceland)
+        name_errors: 'Nafnareitirnir mega aðeins innihalda bókstafi!',
+        email_errors: 'Vinsamlegast sláðu inn gilt netfang!',
+        phone_errors: ['Þetta númer er ekki til', 'Ógildur landsnúmer', 'Númerið er of stutt', 'Númerið er of langt', 'Þetta númer er ekki til', 'Ógild númeralengd'],
+      },
+      'IM': { // English (Isle of Man)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'IT': { // Italian (Italy)
+        name_errors: 'I campi del nome e del cognome possono contenere solo lettere!',
+        email_errors: 'Si prega di inserire un indirizzo email valido!',
+        phone_errors: ['Questo numero non esiste', 'Codice paese non valido', 'Numero troppo corto', 'Numero troppo lungo', 'Questo numero non esiste', 'Lunghezza del numero non valida'],
+      },
+      'CI': { // French (Ivory Coast)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'JM': { // English (Jamaica)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'JP': { // Japanese (Japan)
+        name_errors: '名前と苗字のフィールドには文字のみを含めることができます!',
+        email_errors: '有効なメールアドレスを入力してください!',
+        phone_errors: ['この番号は存在しません', '無効な国コード', '番号が短すぎます', '番号が長すぎます', 'この番号は存在しません', '無効な番号の長さ'],
+      },
+      'JE': { // English (Jersey)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'KZ': { // Kazakh, Russian (Kazakhstan)
+        name_errors: 'Атыңыз бен тегі тек әріптерден тұруы керек!',
+        email_errors: 'Жарамды электрондық поштаны енгізіңіз!',
+        phone_errors: ['Бұл нөмір жоқ', 'Жарамсыз ел коды', 'Нөмір тым қысқа', 'Нөмір тым ұзын', 'Бұл нөмір жоқ', 'Жарамсыз нөмір ұзындығы'],
+      },
+      'KE': { // English (Kenya)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'KG': { // Kyrgyz (Kyrgyzstan)
+        name_errors: 'Атыңыз бен тегі тек әріптерден тұруы керек!',
+        email_errors: 'Жарамды электрондық поштаны енгізіңіз!',
+        phone_errors: ['Бұл нөмір жоқ', 'Жарамсыз ел коды', 'Нөмір тым қысқа', 'Нөмір тым ұзын', 'Бұл нөмір жоқ', 'Жарамсыз нөмір ұзындығы'],
+      },
+      'KI': { // English (Kiribati)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'KW': { // Arabic (Kuwait)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'LA': { // Lao (Laos)
+        name_errors: 'ຊື່ແລະນາມສະກຸນຕ້ອງແມ່ນຕົວອັກສອນເທົ່ານັ້ນ!',
+        email_errors: 'ກະລຸນາປ້ອນທີ່ຢູ່ອີເມວທີ່ຖືກຕ້ອງ!',
+        phone_errors: ['ໝາຍເລກນີ້ບໍ່ມີຢູ່', 'ລະຫັດປະເທດບໍ່ຖືກຕ້ອງ', 'ໝາຍເລກສັ້ນເກີນໄປ', 'ໝາຍເລກຍາວເກີນໄປ', 'ໝາຍເລກນີ້ບໍ່ມີຢູ່', 'ຄວາມຍາວໝາຍເລກບໍ່ຖືກຕ້ອງ'],
+      },
+      'LV': { // Latvian (Latvia)
+        name_errors: 'Vārda un uzvārda laukos var būt tikai burti!',
+        email_errors: 'Lūdzu, ievadiet derīgu e-pasta adresi!',
+        phone_errors: ['Šis numurs neeksistē', 'Nederīgs valsts kods', 'Numurs ir pārāk īss', 'Numurs ir pārāk garš', 'Šis numurs neeksistē', 'Nederīgs numura garums'],
+      },
+      'LS': { // English (Lesotho)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'LR': { // English (Liberia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'LY': { // Arabic (Libya)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'LI': { // German (Liechtenstein)
+        name_errors: 'Vorname und Nachname dürfen nur Buchstaben enthalten!',
+        email_errors: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
+        phone_errors: ['Diese Nummer existiert nicht', 'Ungültiger Ländercode', 'Nummer zu kurz', 'Nummer zu lang', 'Diese Nummer existiert nicht', 'Ungültige Nummernlänge'],
+      },
+      'LT': { // Lithuanian (Lithuania)
+        name_errors: 'Vardas ir pavardė gali būti sudaryti tik iš raidžių!',
+        email_errors: 'Prašome įvesti galiojantį el. pašto adresą!',
+        phone_errors: ['Šis numeris neegzistuoja', 'Neteisingas šalies kodas', 'Numeris per trumpas', 'Numeris per ilgas', 'Šis numeris neegzistuoja', 'Neteisingas numerio ilgis'],
+      },
+      'LU': { // French, German, Luxembourgish (Luxembourg)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MO': { // Chinese, Portuguese (Macau)
+        name_errors: '名字和姓氏字段只能包含字母!',
+        email_errors: '请输入有效的电子邮件地址!',
+        phone_errors: ['该号码不存在', '无效的国家代码', '号码太短', '号码太长', '该号码不存在', '号码长度无效'],
+      },
+      'MG': { // French, Malagasy (Madagascar)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MW': { // English (Malawi)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'MY': { // Malay (Malaysia)
+        name_errors: 'Ruangan nama dan nama keluarga hanya boleh mengandungi huruf!',
+        email_errors: 'Sila masukkan alamat emel yang sah!',
+        phone_errors: ['Nombor ini tidak wujud', 'Kod negara tidak sah', 'Nombor terlalu pendek', 'Nombor terlalu panjang', 'Nombor ini tidak wujud', 'Panjang nombor tidak sah'],
+      },
+      'MV': { // English (Maldives)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'ML': { // French (Mali)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MT': { // Maltese (Malta)
+        name_errors: 'L-oqsma tal-isem u l-kunjom jistgħu jinkludu biss ittri!',
+        email_errors: 'Jekk jogħġbok, daħħal indirizz elettroniku validu!',
+        phone_errors: ['Dan in-numru ma jeżistix', 'Kodiċi tal-pajjiż invalidu', 'In-numru huwa qasir wisq', 'In-numru huwa twil wisq', 'Dan in-numru ma jeżistix', 'Tul tal-għadd invalidu'],
+      },
+      'MH': { // English (Marshall Islands)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'MQ': { // French (Martinique)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MR': { // French, Arabic (Mauritania)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MU': { // English, French (Mauritius)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'MX': { // Spanish (Mexico)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'FM': { // English (Micronesia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'MD': { // Romanian (Moldova)
+        name_errors: 'Câmpurile de prenume și nume de familie pot conține doar litere!',
+        email_errors: 'Vă rugăm să introduceți o adresă de e-mail validă!',
+        phone_errors: ['Acest număr nu există', 'Cod de țară nevalid', 'Numărul este prea scurt', 'Numărul este prea lung', 'Acest număr nu există', 'Lungimea numărului nevalidă'],
+      },
+      'MC': { // French (Monaco)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'MN': { // Mongolian (Mongolia)
+        name_errors: 'Нэр, овгийн талбар зөвхөн үсгээс бүрдэх боломжтой!',
+        email_errors: 'Зөв имэйл хаягийг оруулна уу!',
+        phone_errors: ['Энэ дугаар байхгүй байна', 'Улсын код буруу байна', 'Дугаар хэтэрхий богино байна', 'Дугаар хэтэрхий урт байна', 'Энэ дугаар байхгүй байна', 'Дугаарын урт буруу байна'],
+      },
+      'ME': { // Montenegrin (Montenegro)
+        name_errors: 'Polja za ime i prezime mogu sadržati samo slova!',
+        email_errors: 'Molimo unesite važeću email adresu!',
+        phone_errors: ['Ovaj broj ne postoji', 'Nevažeći pozivni broj države', 'Broj je prekratak', 'Broj je predugačak', 'Ovaj broj ne postoji', 'Nevažeća dužina broja'],
+      },
+      'MS': { // English (Montserrat)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'MA': { // Arabic (Morocco)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'MZ': { // Portuguese (Mozambique)
+        name_errors: 'Os campos de nome e sobrenome só podem conter letras!',
+        email_errors: 'Por favor, insira um endereço de e-mail válido!',
+        phone_errors: ['Este número não existe', 'Código de país inválido', 'Número muito curto', 'Número muito longo', 'Este número não existe', 'Comprimento do número inválido'],
+      },
+      'MM': { // Burmese (Myanmar)
+        name_errors: 'အမည်နှင့်မိသားစုနာမည်အကွက်များတွင်စာလုံးများသာပါဝင်နိုင်သည်!',
+        email_errors: 'တရားဝင်အီးမေးလိပ်စာထည့်ပါ!',
+        phone_errors: ['ဒီနံပါတ်မရှိပါဘူး', 'နိုင်ငံကုဒ်မမှန်ပါ', 'နံပါတ်ကအတိုပါ', 'နံပါတ်ကအရှည်မကောင်းပါ', 'ဒီနံပါတ်မရှိပါဘူး', 'နံပါတ်အရှည်မမှန်ပါ'],
+      },
+      'NA': { // English (Namibia)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NR': { // English (Nauru)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NP': { // Nepali (Nepal)
+        name_errors: 'नाम र थरका फाँटहरूमा केवल अक्षरहरू समावेश हुन सक्छन्!',
+        email_errors: 'कृपया मान्य इमेल ठेगाना प्रविष्ट गर्नुहोस्!',
+        phone_errors: ['यो नम्बर अवस्थित छैन', 'अवैध देश कोड', 'नम्बर धेरै छोटो छ', 'नम्बर धेरै लामो छ', 'यो नम्बर अवस्थित छैन', 'अवैध नम्बर लम्बाइ'],
+      },
+      'NL': { // Dutch (Netherlands)
+        name_errors: 'De velden voornaam en achternaam mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Ongeldige landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige cijfertelling'],
+      },
+      'NC': { // French (New Caledonia)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'NZ': { // English (New Zealand)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NI': { // Spanish (Nicaragua)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'NE': { // French (Niger)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'NG': { // English (Nigeria)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NU': { // Niue
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NF': { // English (Norfolk Island)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'KP': { // Korean (North Korea)
+        name_errors: '이름 및 성 필드에는 문자만 포함될 수 있습니다!',
+        email_errors: '유효한 이메일 주소를 입력하세요!',
+        phone_errors: ['이 번호는 존재하지 않습니다', '잘못된 국가 코드', '번호가 너무 짧습니다', '번호가 너무 깁니다', '이 번호는 존재하지 않습니다', '유효하지 않은 번호 길이'],
+      },
+      'MP': { // English (Northern Mariana Islands)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'NO': { // Norwegian (Norway)
+        name_errors: 'Feltene for fornavn og etternavn kan kun inneholde bokstaver!',
+        email_errors: 'Vennligst skriv inn en gyldig e-postadresse!',
+        phone_errors: ['Dette nummeret eksisterer ikke', 'Ugyldig landskode', 'Nummeret er for kort', 'Nummeret er for langt', 'Dette nummeret eksisterer ikke', 'Ugyldig nummerlengde'],
+      },
+      'OM': { // Arabic (Oman)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'PK': { // Urdu (Pakistan)
+        name_errors: 'نام اور کنیت کے فیلڈز میں صرف حروف شامل ہوسکتے ہیں!',
+        email_errors: 'براہ کرم ایک درست ای میل ایڈریس درج کریں!',
+        phone_errors: ['یہ نمبر موجود نہیں ہے', 'غلط ملک کوڈ', 'نمبر بہت چھوٹا ہے', 'نمبر بہت طویل ہے', 'یہ نمبر موجود نہیں ہے', 'غیر درست نمبر کی لمبائی'],
+      },
+      'PW': { // English (Palau)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'PS': { // Arabic (Palestinian Territories)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'PA': { // Spanish (Panama)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'PG': { // English (Papua New Guinea)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'PY': { // Spanish (Paraguay)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'PE': { // Spanish (Peru)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'PH': { // Filipino (Philippines)
+        name_errors: 'Ang mga field ng pangalan at apelyido ay maaari lamang maglaman ng mga titik!',
+        email_errors: 'Mangyaring maglagay ng wastong email address!',
+        phone_errors: ['Walang ganitong numero', 'Maling country code', 'Masyadong maikli ang numero', 'Masyadong mahaba ang numero', 'Walang ganitong numero', 'Maling haba ng numero'],
+      },
+      'PL': { // Polish (Poland)
+        name_errors: 'Pola imię i nazwisko mogą zawierać tylko litery!',
+        email_errors: 'Proszę wpisać poprawny adres e-mail!',
+        phone_errors: ['Ten numer nie istnieje', 'Nieprawidłowy kod kraju', 'Numer jest za krótki', 'Numer jest za długi', 'Ten numer nie istnieje', 'Nieprawidłowa długość numeru'],
+      },
+      'PT': { // Portuguese (Portugal)
+        name_errors: 'Os campos de nome e sobrenome só podem conter letras!',
+        email_errors: 'Por favor, insira um endereço de e-mail válido!',
+        phone_errors: ['Este número não existe', 'Código de país inválido', 'Número muito curto', 'Número muito longo', 'Este número não existe', 'Comprimento do número inválido'],
+      },
+      'PR': { // Spanish (Puerto Rico)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'Número demasiado corto', 'Número demasiado largo', 'Este número no existe', 'Longitud de número no válida'],
+      },
+      'QA': { // Arabic (Qatar)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'RO': { // Romanian (Romania)
+        name_errors: 'Câmpurile de prenume și nume de familie pot conține doar litere!',
+        email_errors: 'Vă rugăm să introduceți o adresă de e-mail validă!',
+        phone_errors: ['Acest număr nu există', 'Cod de țară nevalid', 'Numărul este prea scurt', 'Numărul este prea lung', 'Acest număr nu există', 'Lungimea numărului nevalidă'],
+      },
+      'RU': { // Russian (Russia)
+        name_errors: 'Поля имени и фамилии могут содержать только буквы!',
+        email_errors: 'Пожалуйста, введите действительный адрес электронной почты!',
+        phone_errors: ['Такого номера не существует', 'Неверный код страны', 'Слишком короткий номер', 'Слишком длинный номер', 'Такого номера не существует', 'Неверная длина номера'],
+      },
+      'RW': { // Kinyarwanda (Rwanda)
+        name_errors: 'In fields z\'izina n\'izina zishobora kuba n\'inyuguti gusa!',
+        email_errors: 'Nyamuneka, andika aderesi y\'imeri nziza!',
+        phone_errors: ['Uyu mubare ntabwo ubaho', 'Ikimenyetso cy\'igihugu si gikwiye', 'Umubare ni mugufi cyane', 'Umubare ni muremure cyane', 'Uyu mubare ntabwo ubaho', 'Uburebure bw\'umubare si bukwiye'],
+      },
+      'WS': { // English (Samoa)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'SM': { // Italian (San Marino)
+        name_errors: 'I campi del nome e del cognome possono contenere solo lettere!',
+        email_errors: 'Inserisci un indirizzo e-mail valido!',
+        phone_errors: ['Questo numero non esiste', 'Prefisso internazionale non valido', 'Numero troppo corto', 'Numero troppo lungo', 'Questo numero non esiste', 'Lunghezza del numero non valida'],
+      },
+      'SA': { // Arabic (Saudi Arabia)
+        name_errors: 'يمكن أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز البلد غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صحيح'],
+      },
+      'SN': { // French (Senegal)
+        name_errors: 'Les champs de prénom et de nom ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Numéro trop court', 'Numéro trop long', 'Ce numéro n\'existe pas', 'Longueur de numéro invalide'],
+      },
+      'RS': { // Serbian (Serbia)
+        name_errors: 'Polja za ime i prezime mogu sadržati samo slova!',
+        email_errors: 'Molimo unesite važeću email adresu!',
+        phone_errors: ['Ovaj broj ne postoji', 'Nevažeći pozivni broj države', 'Broj je prekratak', 'Broj je predugačak', 'Ovaj broj ne postoji', 'Nevažeća dužina broja'],
+      },
+      'SC': { // English, French (Seychelles)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'SL': { // English (Sierra Leone)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'SG': { // English, Malay, Chinese, Tamil (Singapore)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'SX': { // Dutch, English (Sint Maarten)
+        name_errors: 'De velden voornaam en achternaam mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Ongeldige landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige cijfertelling'],
+      },
+      'SK': { // Slovak (Slovakia)
+        name_errors: 'Polia s menom a priezviskom môžu obsahovať iba písmená!',
+        email_errors: 'Zadajte platnú e-mailovú adresu!',
+        phone_errors: ['Toto číslo neexistuje', 'Neplatný kód krajiny', 'Číslo je príliš krátke', 'Číslo je príliš dlhé', 'Toto číslo neexistuje', 'Neplatná dĺžka čísla'],
+      },
+      'SI': { // Slovene (Slovenia)
+        name_errors: 'Polja z imenom in priimkom lahko vsebujejo samo črke!',
+        email_errors: 'Prosimo, vnesite veljaven e-poštni naslov!',
+        phone_errors: ['Ta številka ne obstaja', 'Neveljavna koda države', 'Številka je prekratka', 'Številka je predolga', 'Ta številka ne obstaja', 'Neveljavna dolžina številke'],
+      },
+      'SB': { // English (Solomon Islands)
+        name_errors: 'The name and surname fields can only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'SO': { // Somali (Somalia)
+        name_errors: 'Fadlan magac iyo magac dumar kaliya geli karaan xarfo!',
+        email_errors: 'Fadlan geli cinwaan email sax ah!',
+        phone_errors: ['Lambarkan ma jiro', 'Lambarka wadanku waa khalad', 'Lambarka wuu gaaban yahay', 'Lambarka wuu dheer yahay', 'Lambarkan ma jiro', 'Dhererka lambarka waa khalad'],
+      },
+      'SD': { // Arabic (Sudan)
+        name_errors: 'يجب أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز الدولة غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صالح'],
+      },
+      'SR': { // Dutch (Suriname)
+        name_errors: 'Voornaam- en achternaamvelden mogen alleen letters bevatten!',
+        email_errors: 'Voer een geldig e-mailadres in!',
+        phone_errors: ['Dit nummer bestaat niet', 'Onjuiste landcode', 'Nummer is te kort', 'Nummer is te lang', 'Dit nummer bestaat niet', 'Ongeldige lengte van het nummer'],
+      },
+      'SL': { // English (Sierra Leone)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'TJ': { // Tajik (Tajikistan)
+        name_errors: 'Номҳои шахсӣ танҳо метавонанд ҳарфҳо дошта бошанд!',
+        email_errors: 'Лутфан суроғаи электронии дурустро ворид кунед!',
+        phone_errors: ['Ин рақам вуҷуд надорад', 'Рамзи нодурусти кишвар', 'Рақам хеле кӯтоҳ аст', 'Рақам хеле дароз аст', 'Ин рақам вуҷуд надорад', 'Дарозии рақам нодуруст аст'],
+      },
+      'TH': { // Thai (Thailand)
+        name_errors: 'ชื่อและนามสกุลต้องมีแต่ตัวอักษรเท่านั้น!',
+        email_errors: 'กรุณากรอกที่อยู่อีเมลที่ถูกต้อง!',
+        phone_errors: ['ไม่มีหมายเลขนี้', 'รหัสประเทศไม่ถูกต้อง', 'หมายเลขสั้นเกินไป', 'หมายเลขยาวเกินไป', 'ไม่มีหมายเลขนี้', 'ความยาวหมายเลขไม่ถูกต้อง'],
+      },
+      'TW': { // Chinese (Taiwan)
+        name_errors: '姓名字段只能包含字母!',
+        email_errors: '请输入有效的电子邮件地址!',
+        phone_errors: ['此号码不存在', '国家代码无效', '号码太短', '号码太长', '此号码不存在', '号码长度无效'],
+      },
+      'TZ': { // Swahili (Tanzania)
+        name_errors: 'Sehemu za jina na jina la ukoo zinapaswa kuwa na herufi pekee!',
+        email_errors: 'Tafadhali ingiza anwani ya barua pepe halali!',
+        phone_errors: ['Namba hii haipo', 'Msimbo wa nchi si sahihi', 'Namba ni fupi sana', 'Namba ni ndefu sana', 'Namba hii haipo', 'Urefu wa namba si sahihi'],
+      },
+      'TC': { // English (Turks and Caicos Islands)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'TG': { // French (Togo)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'TK': { // Tokelauan (Tokelau)
+        name_errors: 'E mafai ona aofia ai mataʻitusi i totonu o suafa!',
+        email_errors: 'Faamolemole ulufale i se tuatusi imeli saʻo!',
+        phone_errors: ['Leai ni numera', 'Faailoga atunuʻu e sese', 'Numera e puupuu tele', 'Numera e umi tele', 'Leai ni numera', 'Umi numera e le saʻo'],
+      },
+      'TO': { // Tongan (Tonga)
+        name_errors: 'Ko e ngaahi vahe ngaahi hingoa ko ia ʻoku fiemaʻu pē e ngaahi mataʻitohi!',
+        email_errors: 'Kataki ʻo fakahu ha tuʻasila īmēli totonu!',
+        phone_errors: ['ʻOku ʻikai ʻi ai ʻa e fika ko ʻeni', 'ʻIkai totonu ʻa e fika fonua', 'ʻOku lekooti ʻi ai ʻa e fika', 'ʻOku loloa ʻa e fika', 'ʻOku ʻikai ʻi ai ʻa e fika ko ʻeni', 'ʻIkai totonu ʻa e loloa ʻo e fika'],
+      },
+      'TT': { // English (Trinidad and Tobago)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'TV': { // Tuvaluan (Tuvalu)
+        name_errors: 'E mafai ona aofia ai mataʻitusi i totonu o igoa!',
+        email_errors: 'Faamolemole ulufale i se tuatusi imeli saʻo!',
+        phone_errors: ['Leai ni numera', 'Faailoga atunuʻu e sese', 'Numera e puupuu tele', 'Numera e umi tele', 'Leai ni numera', 'Umi numera e le saʻo'],
+      },
+      'TN': { // Arabic (Tunisia)
+        name_errors: 'يجب أن تحتوي حقول الاسم واللقب على أحرف فقط!',
+        email_errors: 'يرجى إدخال عنوان بريد إلكتروني صالح!',
+        phone_errors: ['هذا الرقم غير موجود', 'رمز الدولة غير صحيح', 'الرقم قصير جدًا', 'الرقم طويل جدًا', 'هذا الرقم غير موجود', 'طول الرقم غير صالح'],
+      },
+      'TM': { // Turkmen (Turkmenistan)
+        name_errors: 'Ad we familiýa ýerleri diňe harplary öz içine alyp biler!',
+        email_errors: 'Hakyky e-poçta adresini giriziň!',
+        phone_errors: ['Bu belgiler ýok', 'Ýalňyş ýurt kody', 'Belgiler gysga', 'Belgiler uzyn', 'Bu belgiler ýok', 'Belginiň uzynlygy nädogry'],
+      },
+      'TR': { // Turkish (Turkey)
+        name_errors: 'Ad ve soyadı alanları yalnızca harf içerebilir!',
+        email_errors: 'Lütfen geçerli bir e-posta adresi girin!',
+        phone_errors: ['Bu numara mevcut değil', 'Geçersiz ülke kodu', 'Numara çok kısa', 'Numara çok uzun', 'Bu numara mevcut değil', 'Geçersiz numara uzunluğu'],
+      },
+      'UG': { // Swahili (Uganda)
+        name_errors: 'Sehemu za jina na jina la ukoo zinapaswa kuwa na herufi pekee!',
+        email_errors: 'Tafadhali ingiza anwani ya barua pepe halali!',
+        phone_errors: ['Namba hii haipo', 'Msimbo wa nchi si sahihi', 'Namba ni fupi sana', 'Namba ni ndefu sana', 'Namba hii haipo', 'Urefu wa namba si sahihi'],
+      },
+      'UZ': { // Uzbek (Uzbekistan)
+        name_errors: 'Ism va familiya maydonlari faqat harflardan iborat bo\'lishi mumkin!',
+        email_errors: 'Iltimos, haqiqiy elektron pochta manzilini kiriting!',
+        phone_errors: ['Bu raqam mavjud emas', 'Noto\'g\'ri mamlakat kodi', 'Raqam juda qisqa', 'Raqam juda uzun', 'Bu raqam mavjud emas', 'Noto\'g\'ri raqam uzunligi'],
+      },
+      'UA': { // Ukrainian (Ukraine)
+        name_errors: 'Поля імені та прізвища можуть містити лише літери!',
+        email_errors: 'Будь ласка, введіть дійсну електронну адресу!',
+        phone_errors: ['Цей номер не існує', 'Неправильний код країни', 'Номер занадто короткий', 'Номер занадто довгий', 'Цей номер не існує', 'Неправильна довжина номера'],
+      },
+      'WF': { // French (Wallis and Futuna)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'UY': { // Spanish (Uruguay)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'El número es demasiado corto', 'El número es demasiado largo', 'Este número no existe', 'Longitud del número no válida'],
+      },
+      'FO': { // Faroese (Faroe Islands)
+        name_errors: 'Nøvn við bæði fyri- og eftirnavni kunnu einans innihalda bókstavir!',
+        email_errors: 'Vinarliga skriva eina gildiga teldupostadressu!',
+        phone_errors: ['Hendan nummari finst ikki', 'Ógildur landakota', 'Nummari er ov stuttur', 'Nummari er ov langur', 'Hendan nummari finst ikki', 'Ógildur nummarlongd'],
+      },
+      'FJ': { // English (Fiji)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'PH': { // Filipino (Philippines)
+        name_errors: 'Ang mga patlang ng pangalan at apelyido ay maaari lamang maglaman ng mga letra!',
+        email_errors: 'Mangyaring magpasok ng wastong email address!',
+        phone_errors: ['Hindi umiiral ang numero na ito', 'Hindi wasto ang country code', 'Masyadong maikli ang numero', 'Masyadong mahaba ang numero', 'Hindi umiiral ang numero na ito', 'Hindi wasto ang haba ng numero'],
+      },
+      'FI': { // Finnish (Finland)
+        name_errors: 'Nimi- ja sukunimikentät voivat sisältää vain kirjaimia!',
+        email_errors: 'Ole hyvä ja anna kelvollinen sähköpostiosoite!',
+        phone_errors: ['Tätä numeroa ei ole olemassa', 'Virheellinen maakoodi', 'Numero on liian lyhyt', 'Numero on liian pitkä', 'Tätä numeroa ei ole olemassa', 'Virheellinen numeron pituus'],
+      },
+      'FK': { // English (Falkland Islands)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'FR': { // French (France)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'GF': { // French (French Guiana)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'PF': { // French (French Polynesia)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'HM': { // English (Heard Island and McDonald Islands)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'HR': { // Croatian (Croatia)
+        name_errors: 'Polja za ime i prezime mogu sadržavati samo slova!',
+        email_errors: 'Molimo unesite valjanu adresu e-pošte!',
+        phone_errors: ['Ovaj broj ne postoji', 'Pogrešan pozivni broj države', 'Broj je prekratak', 'Broj je predugačak', 'Ovaj broj ne postoji', 'Nevažeća duljina broja'],
+      },
+      'CF': { // French (Central African Republic)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'TD': { // French (Chad)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'CZ': { // Czech (Czech Republic)
+        name_errors: 'Pole pro jméno a příjmení může obsahovat pouze písmena!',
+        email_errors: 'Zadejte prosím platnou e-mailovou adresu!',
+        phone_errors: ['Toto číslo neexistuje', 'Neplatný kód země', 'Číslo je příliš krátké', 'Číslo je příliš dlouhé', 'Toto číslo neexistuje', 'Neplatná délka čísla'],
+      },
+      'CL': { // Spanish (Chile)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'El número es demasiado corto', 'El número es demasiado largo', 'Este número no existe', 'Longitud del número no válida'],
+      },
+      'CH': { // German (Switzerland)
+        name_errors: 'Namensfelder dürfen nur Buchstaben enthalten!',
+        email_errors: 'Bitte geben Sie eine gültige E-Mail-Adresse ein!',
+        phone_errors: ['Diese Nummer existiert nicht', 'Ungültiger Ländercode', 'Nummer ist zu kurz', 'Nummer ist zu lang', 'Diese Nummer existiert nicht', 'Ungültige Nummernlänge'],
+      },
+      'SE': { // Swedish (Sweden)
+        name_errors: 'Fält för förnamn och efternamn får endast innehålla bokstäver!',
+        email_errors: 'Vänligen ange en giltig e-postadress!',
+        phone_errors: ['Detta nummer finns inte', 'Ogiltig landskod', 'Numret är för kort', 'Numret är för långt', 'Detta nummer finns inte', 'Ogiltig längd på numret'],
+      },
+      'LK': { // Sinhala (Sri Lanka)
+        name_errors: 'නම සහවාසගම තේරුම් කරගත හැක්කේ අකුරු පමණි!',
+        email_errors: 'කරුණාකර වලංගු විද්‍යුත් තැපැල් ලිපිනයක් ඇතුලත් කරන්න!',
+        phone_errors: ['මෙම අංකය නොපවතී', 'අවලංගු රටේ කේතය', 'අංකය බොහෝ සන්වේගයක්', 'අංකය බොහෝ දිගින්', 'මෙම අංකය නොපවතී', 'අංකය වලංගු දිගකින් නැත'],
+      },
+      'EC': { // Spanish (Ecuador)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'El número es demasiado corto', 'El número es demasiado largo', 'Este número no existe', 'Longitud del número no válida'],
+      },
+      'GQ': { // Spanish (Equatorial Guinea)
+        name_errors: '¡Los campos de nombre y apellido solo pueden contener letras!',
+        email_errors: '¡Por favor, introduzca una dirección de correo electrónico válida!',
+        phone_errors: ['Este número no existe', 'Código de país no válido', 'El número es demasiado corto', 'El número es demasiado largo', 'Este número no existe', 'Longitud del número no válida'],
+      },
+      'ER': { // Tigrinya (Eritrea)
+        name_errors: 'መጽሓፍ ስምን ስምና ዝውል እዛ ፊደላት ብቻ ይሕርዱ!',
+        email_errors: 'እቲ ትኽክለኛ ኢመይል ኣድራሻ ብምእታው!',
+        phone_errors: ['እቲ ቁጽሪ ኣሎን ኣሎ', 'እቲ ሕቡባት ዓዲ ናይ ሃገር ክብል ምዃን ክብል ምዃን', 'እቲ ቁጽሪ እዛ ኣሎን እዛ ኣሎ', 'እቲ ቁጽሪ ምንም ደቂር', 'እቲ ቁጽሪ ኣሎን ኣሎ', 'እቲ ቁጽሪ ርቂቡ ብትክክል ኣሎን እዛ'],
+      },
+      'EE': { // Estonian (Estonia)
+        name_errors: 'Nime- ja perekonnanimede väljad võivad sisaldada ainult tähti!',
+        email_errors: 'Palun sisestage kehtiv e-posti aadress!',
+        phone_errors: ['Seda numbrit ei eksisteeri', 'Kehtetu riigi kood', 'Number on liiga lühike', 'Number on liiga pikk', 'Seda numbrit ei eksisteeri', 'Vale numbri pikkus'],
+      },
+      'ET': { // Amharic (Ethiopia)
+        name_errors: 'የስም እና የቤተሰብ እስከ ሲሆን ብቻ ፊደላት መያዝ ይችላሉ!',
+        email_errors: 'እባኮትን ትክክለኛ ኢሜል አድራሻ ያስገቡ!',
+        phone_errors: ['እነዚህ ቁጥሮች አሉም', 'ሃገር ኮድ ስህተት', 'ቁጥሩ እጅግ ሐሰት ነው', 'ቁጥሩ ረዘም አይደለም', 'እነዚህ ቁጥሮች አሉም', 'በትክክል የቁጥር ርዝመት'],
+      },
+      'YU': { // Serbian (Yugoslavia)
+        name_errors: 'Polja za ime i prezime mogu sadržati samo slova!',
+        email_errors: 'Molimo unesite valjanu adresu e-pošte!',
+        phone_errors: ['Ovaj broj ne postoji', 'Pogrešan pozivni broj države', 'Broj je prekratak', 'Broj je predugačak', 'Ovaj broj ne postoji', 'Nevažeća duljina broja'],
+      },
+      'ZA': { // Afrikaans (South Africa)
+        name_errors: 'Naam- en vanvelde mag slegs letters bevat!',
+        email_errors: 'Voer asseblief \'n geldige e-posadres in!',
+        phone_errors: ['Hierdie nommer bestaan nie', 'Ongeldige landkode', 'Nommer is te kort', 'Nommer is te lank', 'Hierdie nommer bestaan nie', 'Ongeldige nommerlengte'],
+      },
+      'GS': { // English (South Georgia and the South Sandwich Islands)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'KR': { // Korean (South Korea)
+        name_errors: '이름과 성 입력란에는 문자만 포함될 수 있습니다!',
+        email_errors: '유효한 이메일 주소를 입력하십시오!',
+        phone_errors: ['이 번호는 존재하지 않습니다', '잘못된 국가 코드', '번호가 너무 짧습니다', '번호가 너무 깁니다', '이 번호는 존재하지 않습니다', '잘못된 번호 길이'],
+      },
+      'JM': { // English (Jamaica)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'JP': { // Japanese (Japan)
+        name_errors: '名前のフィールドには文字のみを含めることができます!',
+        email_errors: '有効なメールアドレスを入力してください!',
+        phone_errors: ['この番号は存在しません', '無効な国コード', '番号が短すぎます', '番号が長すぎます', 'この番号は存在しません', '無効な番号の長さ'],
+      },
+      'TF': { // French (French Southern and Antarctic Lands)
+        name_errors: 'Les champs prénom et nom de famille ne peuvent contenir que des lettres!',
+        email_errors: 'Veuillez entrer une adresse e-mail valide!',
+        phone_errors: ['Ce numéro n\'existe pas', 'Code pays invalide', 'Le numéro est trop court', 'Le numéro est trop long', 'Ce numéro n\'existe pas', 'Longueur du numéro invalide'],
+      },
+      'IO': { // English (British Indian Ocean Territory)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'UM': { // English (United States Minor Outlying Islands)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      },
+      'US': { // English (United States)
+        name_errors: 'Name fields may only contain letters!',
+        email_errors: 'Please enter a valid email address!',
+        phone_errors: ['This number does not exist', 'Invalid country code', 'Number is too short', 'Number is too long', 'This number does not exist', 'Invalid number length'],
+      }
+    };
+
+    let browserLanguage = '';
+    if (!error_msg.hasOwnProperty(browserLanguage)) {
+      browserLanguage = 'US';
+    }
+
+    if (1) {
+      setupSmoothScrollToForm();
+    }
+
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      const tel_input = form.querySelector('input[name="tel_input"]');
+      if (tel_input) {
+        form.setAttribute('id', 'form_submit');
+
+        // Валидация имени
+        const first_name_input = form.querySelector('input[name="first_name"]');
+        if (first_name_input) {
+          first_name_input.addEventListener('input', function () {
+            checkNameValidation(first_name_input);
+          });
+        }
+
+        // Валидация фамилии
+        const last_name_input = form.querySelector('input[name="last_name"]');
+        if (last_name_input) {
+          last_name_input.addEventListener('input', function () {
+            checkNameValidation(last_name_input);
+          });
+        }
+
+        // Валидация почты
+        const email_input = form.querySelector('input[name="email"]');
+        if (email_input != null) {
+          email_input.addEventListener('input', function () {
+            checkEmailValidation(email_input);
+          });
+        }
+
+        // Валидация телефона
+        const iti = window.intlTelInput(tel_input, {
+          utilsScript: 'js/utils.js',
+          autoPlaceholder: 'aggressive',
+          separateDialCode: true,
+          onlyCountries: [
+            "US"
+          ],
+          initialCountry: '',
+        });
+
+        tel_input.addEventListener('input', () => {
+          checkPhoneValidation(tel_input, iti);
+        });
+
+        form.addEventListener('submit', event => {
+          try {
+            if (
+              !checkNameValidation(first_name_input) ||
+              !checkNameValidation(last_name_input) ||
+              !checkEmailValidation(email_input) ||
+              !checkPhoneValidation(tel_input, iti)
+            ) {
+              event.preventDefault();
+              return 0;
+            }
+            disableButton(form);
+            trimAllInputs(form);
+            form.querySelector('input[name="phone"]').value = iti.getNumber().replace(/[^+\d]/g, '');
+            form.setAttribute('action', '/saveLeadInfo?');
+            form.setAttribute('method', 'post');
+
+            var attribute_func = event.target.getAttribute('openFunc');
+            if (attribute_func && attribute_func == 'true') {
+              event.preventDefault();
+              event.target.setAttribute('openFunc', 'false');
+              my_prev_func();
+            }
+          } catch (error) {
+            event.preventDefault();
+          }
+        });
+      }
+    });
+
+    function checkNameValidation(name_input) {
+      let valid_bool = false;
+
+      if (!name_pattern.test(name_input.value)) {
+        name_input.setCustomValidity(error_msg[browserLanguage]['name_errors']);
+      } else {
+        name_input.setCustomValidity('');
+        valid_bool = true;
+      }
+
+      return valid_bool;
+    };
+
+    function checkEmailValidation(email_input) {
+      if (!email_input) return true;
+
+      let valid_bool = false;
+
+      if (!email_pattern.test(email_input.value)) {
+        email_input.setCustomValidity(error_msg[browserLanguage]['email_errors']);
+      } else {
+        email_input.setCustomValidity('');
+        valid_bool = true;
+      }
+
+      return valid_bool;
+    };
+
+    function checkPhoneValidation(tel_input, iti) {
+      let valid_bool = false;
+
+      if (!new libphonenumber.parsePhoneNumber(iti.getNumber()).isValid()) {
+        tel_input.setCustomValidity(error_msg[browserLanguage]['phone_errors'][iti.getValidationError() || 0]);
+      } else {
+        tel_input.setCustomValidity('');
+        valid_bool = true;
+      }
+
+      return valid_bool;
+    };
+
+    function disableButton(form) {
+      var button = form.querySelector("[type='submit']");
+      button.disabled = true;
+    };
+
+    function trimAllInputs(form) {
+      const inputs = form.querySelectorAll('input');
+
+      inputs.forEach(input => {
+        if (input.value != null) {
+          input.value = input.value.trim();
+        }
+      });
+    };
+
+    function setupSmoothScrollToForm() {
+      $('a:not(.real_href)').removeAttr('href').click(function () {
+        $('#form_submit').get(0).scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      });
+      $('.scrollToForm').click(function () {
+        $('#form_submit').get(0).scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      });
+    }
+  </script>
+
+</body>
+
+</html>

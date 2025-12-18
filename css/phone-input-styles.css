@@ -1,0 +1,34 @@
+/* Phone Input Styles */
+
+/* Make intl-tel-input container full width */
+.iti {
+  display: block;
+  width: 100%;
+}
+
+/* Phone input validation */
+.phone-valid {
+  border-color: #28a745 !important;
+}
+
+.phone-invalid {
+  border-color: #dc3545 !important;
+}
+
+/* Ensure phone input has proper padding for flag */
+.iti input {
+  width: 100%;
+  padding-left: 60px;
+}
+
+/* Style the country dropdown */
+.iti__country-list {
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Make form-group position relative for proper dropdown positioning */
+.form-group {
+  position: relative;
+}

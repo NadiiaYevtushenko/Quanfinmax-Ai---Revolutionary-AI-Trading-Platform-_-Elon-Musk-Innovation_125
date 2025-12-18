@@ -1,0 +1,132 @@
+/* Custom Form Validation Styles */
+
+/* Valid input styling */
+.form--input.valid {
+  border-color: #28a745 !important;
+}
+
+.input--wrapper:has(.form--input.valid)::after {
+  background-color: #28a745 !important;
+}
+
+/* Invalid input styling */
+.form--input.isValid {
+  border-color: #dc3545 !important;
+}
+
+.input--wrapper:has(.form--input.isValid)::after {
+  background-color: #dc3545 !important;
+}
+
+/* Phone error message */
+.phone-eror-mess {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-top: 5px;
+  min-height: 20px;
+}
+
+/* Submit button disabled state */
+.form--btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+  background-color: #666 !important;
+  border-color: #666 !important;
+  box-shadow: none !important;
+}
+
+/* Loading state for button */
+.form--btn.loading .btnFormText::after {
+  content: "...";
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%,
+  100% {
+    content: "...";
+  }
+}
+
+/* intl-tel-input custom styling */
+.iti {
+  width: 100%;
+  display: block;
+}
+
+.iti__selected-flag {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.iti__selected-flag:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.iti__country-list {
+  background-color: rgba(20, 20, 30, 0.95);
+  border: 1px solid var(--third-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 288px;
+  overflow-x: hidden;
+}
+
+.iti__country {
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.iti__flag-box,
+.iti__country-name {
+  color: #fff !important;
+}
+
+.iti__country:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.iti__country.iti__highlight {
+  background-color: var(--third-color);
+}
+
+.iti__dial-code {
+  color: #aaa;
+}
+
+/* Make sure phone input has proper spacing for flag */
+.iti--allow-dropdown .form--input,
+.iti--separate-dial-code .form--input {
+  padding-left: 95px !important;
+}
+
+/* Floating label adjustments for phone input with flag */
+/* Keep phone label large and inside input field */
+.phone-wrapper .phone-label {
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s ease all;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  pointer-events: none;
+  left: 75px;
+  top: 0.6em;
+  background-color: transparent;
+}
+
+/* When phone input has value or is focused, move label up */
+.phone-wrapper .form--input:not(:placeholder-shown) ~ .phone-label,
+.phone-wrapper .form--input:focus ~ .phone-label {
+  top: -13px;
+  font-size: 10px;
+  line-height: 10px;
+  left: 10px;
+  padding: 1px 3px;
+}
